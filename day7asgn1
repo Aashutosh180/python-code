@@ -1,0 +1,15 @@
+#Ass1 Day7
+
+file = open("FF.txt","w")
+file.close()
+
+file = open("FF.txt","r")
+try:
+    file.write("Hi Guys")
+except Exception as e:
+    print("There was an error in the file handling")
+    print("Error was -",e)
+finally:
+    file.close()
+
+print("Hey guys,rate the session as of right now")
